@@ -77,7 +77,6 @@ flutter:
    - ic_contact.png
    - assets/languages/en.json
    - assets/languages/vi.json
-   - assets/languages/jp.json
   fonts:
     - family: googleSans
       fonts:

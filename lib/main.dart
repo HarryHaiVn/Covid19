@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
       supportedLocales: [
         const Locale('en', "US"), // English
         const Locale('vi', "VN"), // Vn
-        const Locale('jp', "JP"), // jp
         // ... other locales the app supports
       ],
       localeResolutionCallback: (locale, supportedLocales) {

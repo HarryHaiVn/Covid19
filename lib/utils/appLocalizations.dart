@@ -49,7 +49,7 @@ class _AppLocalizationsDelegate
   @override
   bool isSupported(Locale locale) {
     // Bạn thêm tất cả các ngôn ngữ ứng dụng của bạn hỗ trợ tại đây
-    return ['en', 'vi',"jp"].contains(locale.languageCode);
+    return ['en', 'vi'].contains(locale.languageCode);
   }
 
   @override
