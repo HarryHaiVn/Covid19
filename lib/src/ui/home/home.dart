@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_covid19/src/ui/common/widget.dart';
 import 'package:flutter_covid19/src/ui/home/covid_in_viet_nam.dart';
 import 'package:flutter_covid19/src/ui/home/covid_in_world.dart';
-import 'package:flutter_covid19/src/ui/home/list_case_country.dart';
+import 'package:flutter_covid19/src/ui/widgets/list_case_country.dart';
 import 'package:flutter_covid19/src/ui/widgets/page_indicator.dart';
 import 'package:flutter_covid19/utils/utils.dart';
 
@@ -98,8 +97,6 @@ class _HomeState extends State<Home> {
                 height: 10.0,
               ),
               ViewCovidVietNam(),
-              TextWidgetCommon(const EdgeInsets.only(top: 10.0), "Top Country",
-                  Colors.green, 20.0, FontStyle.normal),
               ViewCaseCountryList(),
             ],
           ),

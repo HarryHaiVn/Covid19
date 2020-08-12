@@ -3,6 +3,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_covid19/data/model/covid_model.dart';
 import 'package:flutter_covid19/src/bloc/covid_bloc.dart';
 import 'package:flutter_covid19/src/ui/common/widget.dart';
+import 'package:flutter_covid19/src/ui/widgets/text_widget.dart';
+import 'package:flutter_covid19/utils/appLocalizations.dart';
 import 'package:flutter_covid19/utils/utils.dart';
 import 'package:intl/intl.dart';
 
@@ -82,14 +84,14 @@ class CovidWorldListViewState extends State<CovidWorldListView>
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            TextWidgetCommon(const EdgeInsets.all(0.0), "Thế Giới",
+            TextWidgetCommon(const EdgeInsets.all(0.0),AppLocalizations.of(context).translate('home_text_the_word'),
                 Colors.black, 20.0, FontStyle.normal, FontWeight.bold),
             Row(
               children: <Widget>[
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    TextWidgetCommon(const EdgeInsets.all(8.0), "Số ca nhiễm",
+                    TextWidgetCommon(const EdgeInsets.all(8.0),AppLocalizations.of(context).translate('home_text_number_case'),
                         Colors.black, 20.0, FontStyle.normal),
                     TextWidgetCommon(
                         const EdgeInsets.all(8.0),
@@ -97,7 +99,7 @@ class CovidWorldListViewState extends State<CovidWorldListView>
                         Colors.red,
                         20.0,
                         FontStyle.normal),
-                    TextWidgetCommon(const EdgeInsets.all(8.0), "Phục hồi",
+                    TextWidgetCommon(const EdgeInsets.all(8.0), AppLocalizations.of(context).translate('home_text_number_case_recovered'),
                         Colors.black, 20.0, FontStyle.normal),
                     TextWidgetCommon(
                         const EdgeInsets.all(8.0),
@@ -113,7 +115,7 @@ class CovidWorldListViewState extends State<CovidWorldListView>
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    TextWidgetCommon(const EdgeInsets.all(8.0), "Đang điều trị",
+                    TextWidgetCommon(const EdgeInsets.all(8.0),  AppLocalizations.of(context).translate('home_text_number_case_active'),
                         Colors.black, 20.0, FontStyle.normal),
                     TextWidgetCommon(
                         const EdgeInsets.all(8.0),
@@ -123,13 +125,11 @@ class CovidWorldListViewState extends State<CovidWorldListView>
                         Colors.blue,
                         20.0,
                         FontStyle.normal),
-                    TextWidgetCommon(const EdgeInsets.all(8.0), "Tử vong",
+                    TextWidgetCommon(const EdgeInsets.all(8.0), AppLocalizations.of(context).translate('home_text_number_case_deaths'),
                         Colors.black, 20.0, FontStyle.normal),
                     TextWidgetCommon(
                         const EdgeInsets.all(8.0),
-                        formatter
-                            .format(covidModel.total_deaths)
-                            .toString(),
+                        formatter.format(covidModel.total_deaths).toString(),
                         Colors.grey,
                         20.0,
                         FontStyle.normal),

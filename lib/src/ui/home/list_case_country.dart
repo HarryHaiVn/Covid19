@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_covid19/data/model/covid_model.dart';
 import 'package:flutter_covid19/src/bloc/covid_bloc.dart';
 import 'package:flutter_covid19/src/ui/common/widget.dart';
+import 'package:flutter_covid19/src/ui/widgets/text_widget.dart';
 import 'package:flutter_covid19/utils/utils.dart';
 import 'package:intl/intl.dart';
 
